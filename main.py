@@ -23,7 +23,7 @@ def login():
 
 
 @app.route('/register', methods=['GET', 'POST'])
-def reqister(): 
+def reqister():
     form = RegisterForm()
     if form.validate_on_submit():
         if form.password.data != form.password_again.data:
