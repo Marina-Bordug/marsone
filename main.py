@@ -59,20 +59,4 @@ if __name__ == "__main__":
     db_sess = db_session.create_session()
     db_sess.add(user)
     db_sess.commit()
-    # user.name = "Пользователь 3"
-    # user.about = "биография пользователя 3"
-    # user.email = "email3@email.ru"
-    # db_sess = db_session.create_session()
-    # user = db_sess.query(User).filter(User.id == 2).first()
-    # news = News(title="Вторая новость", content="Привет второй блог!",
-    #             user=user, is_private=False)
-    # for n in user.news:
-    #     print(n.title)
-    # db_sess.add(news)
-    # db_sess.commit()
-    # user = db_sess.query(User).first()
-    # user.name = "qwe"
-    # db_sess.delete(user)
-    # db_sess.add(user)
-    # db_sess.commit()
     app.run(host="127.0.0.1", port=8080)
